@@ -61,7 +61,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ### 4. Clonar o Repositório e Criar o Ambiente Virtual
 
 ```sh
-git clone [https://github.com/seu-repositorio.git](https://github.com/pauloruszel/yolo11_face_detection.git)
+git clone https://github.com/pauloruszel/yolo11_face_detection.git
 cd yolo11_face_detection
 python -m venv venv
 source venv/bin/activate # Linux/Mac
