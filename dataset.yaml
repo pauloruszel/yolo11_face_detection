@@ -1,0 +1,4 @@
+train: C:/Users/rusze/Downloads/Estudo de IA/yolo11_face_detection/datasets/images/train
+val: C:/Users/rusze/Downloads/Estudo de IA/yolo11_face_detection/datasets/images/val
+nc: 1
+names: ["face"]
