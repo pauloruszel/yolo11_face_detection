@@ -61,8 +61,8 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ### 4. Clonar o Repositório e Criar o Ambiente Virtual
 
 ```sh
-git clone https://github.com/seu-repositorio.git
-cd seu-repositorio
+git clone [https://github.com/seu-repositorio.git](https://github.com/pauloruszel/yolo11_face_detection.git)
+cd yolo11_face_detection
 python -m venv venv
 source venv/bin/activate # Linux/Mac
 venv\Scripts\activate  # Windows
@@ -103,7 +103,7 @@ O batch size será ajustado automaticamente com base na memória disponível da 
 - `--cache=ram`: Carrega as imagens na RAM para acelerar o treinamento.
 
 ```sh
-python scripts/train.py --img 640 --batch 4 --epochs 100 --data "C:/Users/rusze/Downloads/Estudo de IA/yolo11_face_detection/dataset.yaml" --weights "C:/Users/rusze/Downloads/Estudo de IA/yolo11_face_detection/models/yolo11n.pt" --device 0 --name face_detection --half --cache=ram
+python scripts/train.py --img 640 --batch 4 --epochs 100 --data "C:/caminho/yolo11_face_detection/dataset.yaml" --weights "C:/caminho/yolo11_face_detection/models/yolo11n.pt" --device 0 --name face_detection --half --cache=ram
 ```
 
 ### 4. Executar Inferência com Webcam
@@ -111,7 +111,7 @@ python scripts/train.py --img 640 --batch 4 --epochs 100 --data "C:/Users/rusze/
 Este script utiliza a webcam para realizar a detecção em tempo real.
 
 ```sh
-python scripts/infer_webcam.py
+python scripts/webcam_detect.py
 ```
 
 ### 5. Testar o Modelo em uma Imagem
@@ -136,14 +136,13 @@ python scripts/detection.py --image datasets/images/val/alguma_imagem.jpg
 │       ├── train/
 │       ├── val/
 ├── models/
-│   ├── yolo11n.pt
 ├── scripts/
 │   ├── train.py
 │   ├── webcam_detect.py
 │   ├── detection.py
 │   ├── convert_wider_to_yolo.py
 │   ├── fix_labels.py
-├── requirements.txt
+├── yolo11n.pt
 └── README.md
 ```
 
